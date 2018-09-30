@@ -1,0 +1,97 @@
+html{
+  margin:0;
+  padding:0;
+}
+
+.device {
+    position: relative;
+    background-size: cover;
+    box-shadow: 2px 4px 15px #000;
+    border-radius: 45px;
+    transform: skew(5deg, -5deg);
+}
+
+.holder:nth-child(odd) .device {
+    transform: skew(-5deg, 5deg);
+}
+
+.holder {
+    background-color: #bdc3c7;
+    position: relative;
+    height: 800px;
+    padding-bottom: 100px;
+}
+
+.marvel-device {
+    transform: scale(.7) skew(5deg, -5deg);
+    float: right;
+    margin-right: 100px;
+    box-shadow: 5px 5px 49px #000 !important;
+}
+.holder:nth-child(odd) .marvel-device {
+    transform: scale(.7) skew(-5deg, 5deg);
+}
+
+.device-wrapper {
+    max-width: 300px;
+    width: 250px;
+    padding: 100px;
+    right: 0px;
+    position: absolute;
+}
+.screen1{
+  background-image: url(../resources/Protruding-Squares.svg);
+  height: 100%;
+  width: 100%;
+}
+
+.screen2{
+    background-image: url(../resources/Wintery-Sunburst.svg);
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.screen3{
+  background-image: url(../resources/Subtle-Prism.svg);
+  height: 100%;
+  width: 100%;
+}
+
+.screen4{
+  background-image: url(../resources/Bullseye-Gradient.svg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+
+.screen5{
+  background-image: url(../resources/Wavey-Fingerprint.svg);
+  height: 100%;
+  width: 100%;
+
+  animation: holder5_slide 10s linear infinite;
+}
+
+@-webkit-keyframes holder5_slide {
+  from{
+      background-position:0px;
+  }
+  to{
+      background-position:250px;
+  }
+}
+
+
+.screen6 {
+    background-image: url(../resources/Abstract-Envelope.svg);
+    height: 100%;
+    width: 100%;
+    background-size: auto 100%;
+    background-position: center;
+}
