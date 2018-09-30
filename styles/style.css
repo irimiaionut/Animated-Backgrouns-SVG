@@ -3,18 +3,6 @@ html{
   padding:0;
 }
 
-.device {
-    position: relative;
-    background-size: cover;
-    box-shadow: 2px 4px 15px #000;
-    border-radius: 45px;
-    transform: skew(5deg, -5deg);
-}
-
-.holder:nth-child(odd) .device {
-    transform: skew(-5deg, 5deg);
-}
-
 .holder {
     background-color: #bdc3c7;
     position: relative;
@@ -23,13 +11,33 @@ html{
 }
 
 .marvel-device {
-    transform: scale(.7) skew(5deg, -5deg);
     float: right;
     margin-right: 100px;
-    box-shadow: 5px 5px 49px #000 !important;
+    transform: scale(.7) skew(3deg, -3deg) perspective(400px) rotateY(3deg);
+    box-shadow: -5px 5px 30px #000;
+    animation: perspective 20s 0s ease-in-out infinite;
 }
 .holder:nth-child(odd) .marvel-device {
-    transform: scale(.7) skew(-5deg, 5deg);
+    transform: scale(.7) skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
+/*    box-shadow: 5px 5px 30px #000;*/
+}
+
+@keyframes perspective {
+  0% {
+    transform: scale(.7) skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
+    box-shadow: 5px 5px 30px #000;
+  }
+  30% {
+    transform: scale(.7) skew(0deg, 0deg) perspective(400px) rotateY(0deg);
+  box-shadow: 0px 0px 30px #000;
+}
+  60% {
+    transform: scale(.7) skew(3deg, -3deg) perspective(400px) rotateY(3deg);
+    box-shadow: -5px 5px 30px #000;}
+  100% {
+    transform: scale(.7) skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
+    box-shadow: 5px 5px 30px #000;
+  }
 }
 
 .device-wrapper {
