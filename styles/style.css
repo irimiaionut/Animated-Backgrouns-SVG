@@ -151,3 +151,14 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+.screen9 {
+    background-image: url(../resources/Diamond-Sunset.svg);
+    height: 100%;
+    width: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

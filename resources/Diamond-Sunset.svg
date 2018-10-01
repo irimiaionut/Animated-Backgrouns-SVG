@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <style>
+    .circle{
+      transform: scale(1);
+      animation: pulse-me 8s 0s ease-in-out infinite;
+      transform-origin: 24px 24px;
+    }
+
+    .circle1{
+      transform: scale(1);
+      animation: pulse-me 5s 2s ease-in-out infinite;
+      transform-origin: 68px 68px;
+    }
+    .circle2{
+      transform: scale(1);
+      animation: pulse-me 13s 0s ease-in-out infinite;
+      transform-origin: 112px 112px;
+    }
+    .circle3{
+      transform: scale(1);
+      animation: pulse-me 9s 2s ease-in-out infinite;
+      transform-origin: 24px 156px;
+    }
+
+    @keyframes pulse-me {
+      0% {
+        transform: scale(1);
+      }
+      10% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+
+   <defs>
+      <linearGradient id="a" x1="0" x2="0" y1="0" y2="1">
+         <stop offset="0" stop-color="#80F" />
+         <stop offset="1" stop-color="#f40" />
+      </linearGradient>
+   </defs>
+   <pattern id="b" width="132" height="176" patternUnits="userSpaceOnUse">
+      <circle class="circle" fill="#ffffff" cx="24" cy="24" r="20" />
+      <circle fill="#ffffff" cx="68" cy="24" r="20" />
+      <circle fill="#ffffff" cx="112" cy="24" r="20" />
+
+      <circle fill="#ffffff" cx="24" cy="68" r="20" />
+      <circle class="circle1" fill="#ffffff" cx="68" cy="68" r="20" />
+      <circle fill="#ffffff" cx="112" cy="68" r="20" />
+
+      <circle fill="#ffffff" cx="24" cy="112" r="20" />
+      <circle fill="#ffffff" cx="68" cy="112" r="20" />
+      <circle class="circle2" fill="#ffffff" cx="112" cy="112" r="20" />
+
+      <circle class="circle3" fill="#ffffff" cx="24" cy="156" r="20" />
+      <circle fill="#ffffff" cx="68" cy="156" r="20" />
+      <circle fill="#ffffff" cx="112" cy="156" r="20" />
+
+   </pattern>
+   <rect width="100%" height="100%" fill="url(#a)" />
+   <rect width="100%" height="100%" fill="url(#b)" fill-opacity="0.1" />
+
+</svg>
