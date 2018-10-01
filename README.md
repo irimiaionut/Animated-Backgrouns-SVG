@@ -4,9 +4,6 @@ This repo contains animated SVG files.
 Feel free to try and use them.
 
 
-```html
-<h2>Example of code</h2>
-
 <pre>
     <div class="container">
         <div class="block two first">
@@ -17,7 +14,6 @@ Feel free to try and use them.
         </div>
     </div>
 </pre>
-```
 
 
 
