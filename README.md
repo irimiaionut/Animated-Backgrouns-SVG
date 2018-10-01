@@ -7,7 +7,7 @@ Feel free to try and use them.
 
 
 Styles available: 
-![alt text](https://github.com/irimiaionut/AnimationBackgroundSVGs/blob/master/resources/Abstract-Envelope.svg)
+![alt text](https://github.com/irimiaionut/AnimationBackgroundSVGs/blob/master/resources/Abstract-Envelope.svg, 200px 200px)
 
 ![alt text](https://github.com/irimiaionut/AnimationBackgroundSVGs/blob/master/resources/Bullseye-Gradient.svg)
 
