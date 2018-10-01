@@ -2,7 +2,9 @@ html{
   margin:0;
   padding:0;
 }
-
+body{
+  margin:0;
+}
 .holder {
     background-color: #bdc3c7;
     position: relative;
@@ -111,7 +113,7 @@ html{
   background-image: url(../resources/Wavey-Fingerprint.svg);
   height: 100%;
   width: 100%;
-
+  transform: scale(3);
   animation: holder5_slide 10s linear infinite;
 }
 
