@@ -3,17 +3,19 @@
 This repo contains animated SVG files.
 Feel free to try and use them.
 
+<style>
+    .holder{
+        height:400px;   
+        width:100%;
+    }
+    .back1{
+        background-image: url(https://github.com/irimiaionut/AnimationBackgroundSVGs/blob/master/resources/Abstract-Envelope.svg);
+    }
+</style>
 
-<pre>
-    <div class="container">
-        <div class="block two first">
-            <h2>Your title</h2>
-            <div class="wrap">
-            //Your content
-            </div>
-        </div>
-    </div>
-</pre>
+<div class="holder back1">
+
+</div>
 
 
 
