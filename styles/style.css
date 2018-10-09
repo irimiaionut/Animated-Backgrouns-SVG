@@ -6,131 +6,126 @@ body{
   margin:0;
 }
 .holder {
-    background-color: #bdc3c7;
+    background-color: #000;
     position: relative;
     height: 800px;
-    padding-bottom: 100px;
+    padding-bottom: 15%;
+}
+.holder::after {
+  clear:both;
 }
 
-.marvel-device {
-    float: right;
-    margin-right: 10%;
-    margin-left: 0%;
-    transform: scale(.7) skew(3deg, -3deg) perspective(400px) rotateY(3deg);
-    box-shadow: -5px 5px 30px #000;
-    animation: perspective 20s 0s ease-in-out infinite;
+.message_holder {
+  height: 300px;
+  width:500px;
+  background-color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  margin: 0 auto;
+  float: right;
+  margin-right: 10%;
+  margin-left: 0%;
+  transform: skew(3deg, -3deg) perspective(400px) rotateY(3deg);
+  animation: perspective 20s 0s ease-in-out infinite;
+  margin-top: -150px;
+  display: table;
 }
-.holder:nth-child(odd) .marvel-device {
-    transform: scale(.7) skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
+.holder:nth-child(odd) .message_holder {
+    transform: skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
     float: left;
-    margin-right: 10%;
-    margin-left: 5%;
-/*    box-shadow: 5px 5px 30px #000;*/
+    margin-left: 10%;
+    margin-right: 0;
+}
+
+.noPerspective{
+  animation: none;
 }
 
 
 @keyframes perspective {
   0% {
-    transform: scale(.7) skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
-    box-shadow: 5px 5px 30px #000;
+    transform: skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
+    box-shadow: 5px 10px 30px #33465A;
   }
   30% {
-    transform: scale(.7) skew(0deg, 0deg) perspective(400px) rotateY(0deg);
-  box-shadow: 0px 0px 30px #000;
+    transform: skew(0deg, 0deg) perspective(400px) rotateY(0deg);
+  box-shadow: 0px 10px 30px #33465A;
 }
   60% {
-    transform: scale(.7) skew(3deg, -3deg) perspective(400px) rotateY(3deg);
-    box-shadow: -5px 5px 30px #000;}
+    transform: skew(3deg, -3deg) perspective(400px) rotateY(3deg);
+    box-shadow: -5px 10px 30px #33465A;}
   100% {
-    transform: scale(.7) skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
-    box-shadow: 5px 5px 30px #000;
+    transform: skew(-3deg, 3deg) perspective(400px) rotateY(-3deg);
+    box-shadow: 5px 10px 30px #33465A;
   }
 }
 
-.device-wrapper {
-    max-width: 300px;
-    width: 250px;
-    padding: 100px;
-    right: 0px;
-    position: absolute;
-}
 
 .message {
-    position: absolute;
-    top: 50%;
-    bottom: 0;
-    display: block;
-    right: 10%;
-    left:initial;
-    margin-top: -100px;
-    font-size: 70px;
-    color: #fff;
-    font-family: sans-serif;
-    max-width: 35%;
-    text-align: right;
-    text-shadow: 3px 2px 6px #000;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 28px;
+  line-height: 38px;
+  color: #ffffffdb;
+  font-family: sans-serif;
+  text-align: center;
+  width: calc(100% - 40px);
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  text-shadow: 1px 1px 8px #61809dd4;
 }
-
-.holder:nth-child(even) .message{
-  left:10%;
-  right: initial;
-  text-align: left;
-  text-shadow: -3px 2px 6px #000;
+.holder:nth-child(even) .message_holder {
+    margin-right: 10%;
+    margin-left: 0;
+    right: 0;
 }
 
 .screen1{
   background-image: url(../resources/Protruding-Squares.svg);
-  height: 100%;
   width: 100%;
 }
 
 .screen2{
     background-image: url(../resources/Wintery-Sunburst.svg);
-    height: 100%;
-    width: 100%;
     border: 1px solid #fff;
-    background-size: auto 100%;
+    background-size: 100% auto;
     background-position: center;
 }
 
 .screen3{
   background-image: url(../resources/Subtle-Prism.svg);
-  height: 100%;
-  width: 100%;
 }
 
 .screen4{
   background-image: url(../resources/Bullseye-Gradient.svg);
-  height: 100%;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: 100% auto;
 }
 
 
 .screen5{
   background-image: url(../resources/Wavey-Fingerprint.svg);
-  height: 100%;
-  width: 100%;
-  transform: scale(3);
+  background-size: 126% auto;
   animation: holder5_slide 10s linear infinite;
 }
 
 @-webkit-keyframes holder5_slide {
   from{
-      background-position:0px;
+    background-position: 0px 0px;
   }
   to{
-      background-position:250px;
+    background-position: 485% 0px;
   }
 }
 
 
 .screen6 {
     background-image: url(../resources/Abstract-Envelope.svg);
-    height: 100%;
-    width: 100%;
     background-size: auto 100%;
     background-position: center;
 }
@@ -138,29 +133,31 @@ body{
 
 .screen7 {
     background-image: url(../resources/Endless-Constellation.svg);
-    height: 100%;
-    width: 100%;
-    background-size: auto 100%;
+    background-size: 100% auto;
     background-position: top;
 }
 
 
 .screen8 {
     background-image: url(../resources/Radiant-Gradient.svg);
-    height: 100%;
-    width: 100%;
-    background-position: top left -150px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
 }
 
 
 
 .screen9 {
     background-image: url(../resources/Diamond-Sunset.svg);
-    height: 100%;
-    width: 100%;
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+
+.screen10 {
+    background-image: url(../resources/Rose-Petals.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }

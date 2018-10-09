@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 400">
+  <style>
+    .rotateElement1 {
+        transform-origin: center;
+        animation-name: rotate1;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+    }
+    .rotateElement2 {
+        transform-origin: center;
+        animation-name: rotate2;
+        animation-duration: 20s;
+        animation-offset:1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+    }
+    .rotateElement3 {
+        transform-origin: center;
+        animation-name: rotate3;
+        animation-duration: 40s;
+        animation-offset:1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+    }
+
+    @-webkit-keyframes rotate1 {
+      0% {
+        transform: rotate(0deg);
+      }
+      20% {
+        transform: rotate(10deg) translateX(10px);
+      }
+      40% {
+        transform: rotate(0deg) translateX(0px);
+      }
+      50% {
+        transform: rotate(5deg) translateX(5px);
+      }
+      70% {
+        transform: rotate(10deg) translateX(10px);
+      }
+      100% {
+        transform: rotate(0deg) translateX(0px);
+      }
+    }
+
+    @-webkit-keyframes rotate2 {
+      0% {
+        transform: rotate(0deg);
+      }
+      20% {
+        transform: rotate(-10deg) translateX(-10px);
+      }
+      40% {
+        transform: rotate(0deg) translateX(0px);
+      }
+      50% {
+        transform: rotate(-5deg) translateX(-5px);
+      }
+      70% {
+        transform: rotate(-10deg) translateX(-10px);
+      }
+      100% {
+        transform: rotate(0deg) translateX(0px);
+      }
+    }
+
+    @-webkit-keyframes rotate3 {
+      0% {
+        transform: rotate(0deg);
+      }
+      20% {
+        transform: rotate(-10deg) translateX(-10px);
+      }
+      40% {
+        transform: rotate(0deg) translateX(0px);
+      }
+      50% {
+        transform: rotate(5deg)  translateX(5px);
+      }
+      70% {
+        transform: rotate(10deg) translateX(10px);
+      }
+      100% {
+        transform: rotate(0deg) translateX(0px);
+      }
+    }
+  </style>
+
+  <rect fill="#330000" width="800" height="400"/>
+  <defs>
+    <radialGradient id="a" cx="396" cy="281" r="514" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D18"/>
+      <stop offset="1" stop-color="#330000"/>
+    </radialGradient>
+    <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="400" y1="148" x2="400" y2="444">
+      <stop offset="0" stop-color="#FA3" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FA3" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#a)" width="1200" height="1080"/>
+  <g fill-opacity="0.4">
+    <circle class="element rotateElement1" fill="url(#b)" cx="267.5" cy="61" r="300"/>
+    <circle class="element rotateElement2" fill="url(#b)" cx="532.5" cy="61" r="300"/>
+    <circle class="element rotateElement3" fill="url(#b)" cx="400" cy="30" r="300"/>
+  </g>
+  <!-- <script type="text/javascript">
+    console.log(document.getElementsByClassName("element"));
+  </script> -->
+</svg>
