@@ -5,7 +5,7 @@ Feel free to try and use them.
 
 
 Presentation:
-https://irimiaionut.github.io/AnimationBackgroundSVGs/
+https://irimiaionut.github.io/Animated-Backgrouns-SVG/
 
 
 
