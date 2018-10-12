@@ -126,7 +126,7 @@ body{
 
 .screen6 {
     background-image: url(../resources/Abstract-Envelope.svg);
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
 }
 
@@ -141,7 +141,7 @@ body{
 .screen8 {
     background-image: url(../resources/Radiant-Gradient.svg);
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
 }
 
 
