@@ -11,4 +11,3 @@ https://irimiaionut.github.io/Animated-Backgrouns-SVG/
 
 Thanks for Resources:
 - https://www.svgbackgrounds.com/
-- https://marvelapp.github.io/devices.css/
